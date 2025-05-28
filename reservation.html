@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réserver - No Way Out</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Logo No Way Out" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="salles.html">Nos Salles</a></li>
+                <li><a href="reservation.html">Réserver</a></li>
+                <li><a href="infos.html">Infos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation">
+        <h1>Réserver une Partie</h1>
+        <form id="resa-form">
+            <label for="name">Votre Nom :</label>
+            <input type="text" id="name" required>
+
+            <label for="salle">Choisissez une salle :</label>
+            <select id="salle" required>
+                <option value="">-- Choisir --</option>
+                <option value="atelier">L'Atelier Oublié</option>
+                <option value="manoir">Le Manoir de Minuit</option>
+                <option value="casino">Braquage au Casino</option>
+                <option value="train">L'Affaire du Train Express</option>
+            </select>
+
+            <label for="joueurs">Nombre de Joueurs :</label>
+            <input type="number" id="joueurs" min="2" max="6" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" required>
+
+            <button type="submit" class="btn">Réserver</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 No Way Out</p>
+    </footer>
+
+</body>
+</html>
